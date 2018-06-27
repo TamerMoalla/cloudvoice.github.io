@@ -24,8 +24,13 @@
 		{
 			font-size: 50px;
 			color: #00B7C3;
-			font-size: 50px;
+			
 		}
+		.cloud-logos
+		{
+			font-size: 40px;
+		}
+		
 		@media screen and (max-width: 768px)
 		{
 			.col-sm-4 
@@ -41,13 +46,9 @@
     border-radius:0;
     transition: box-shadow 0.7s;
 }
-
 .panel:hover {
     box-shadow: 5px 0px 40px rgba(0,0,0, .2);
 }
-
-
-
 .panel-heading {
     color: #fff !important;
     background-color: #00B7C3 !important;
@@ -58,15 +59,12 @@
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
 }
-
 .panel-footer {
     background-color: #fff !important;
 }
-
 .panel-footer h3 {
     font-size: 32px;
 }
-
 .panel-footer h4 {
     color: #aaa;
     font-size: 14px;
@@ -83,16 +81,13 @@
     letter-spacing: 4px;
     border-radius: 0;
 }
-
 .navbar li a, .navbar .navbar-brand {
     color: #fff !important;
 }
-
 .navbar-nav li a:hover, .navbar-nav li.active a {
     color: #f4511e !important;
     background-color: #fff !important;
 }
-
 .navbar-default .navbar-toggle {
     border-color: transparent;
     color: #fff !important;
@@ -104,22 +99,17 @@
 $(document).ready(function(){
   // Add smooth scrolling to all links in navbar + footer link
   $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-
    // Make sure this.hash has a value before overriding default behavior
   if (this.hash !== "") {
-
     // Prevent default anchor click behavior
     event.preventDefault();
-
     // Store hash
     var hash = this.hash;
-
     // Using jQuery's animate() method to add smooth page scroll
     // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
     $('html, body').animate({
       scrollTop: $(hash).offset().top
     }, 1200, function(){
-
       // Add hash (#) to URL when done scrolling (default click behavior)
       window.location.hash = hash;
       });
@@ -139,6 +129,7 @@ $(document).ready(function(){
         <span class="icon-bar"></span>
         <span class="icon-bar"></span> 
       </button>
+	  
       <a class="navbar-brand" href="#">CloudVoice</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
@@ -155,7 +146,8 @@ $(document).ready(function(){
 
 
 <div class="jumbotron text-center">
-  <h1>CloudVoice</h1> 
+ 
+  <h1> <span class="glyphicon glyphicon glyphicon-cloud cloud-logos"></span> CloudVoice</h1> 
   <p>Your voice from the cloud</p> 
 </div>
 
@@ -215,9 +207,9 @@ $(document).ready(function(){
       <p>Using these APIs, we can trigger calls and stream the voice file to the end user after expecting DTMF response from the users we can inform back with user input so you can do teh needed actions</p>
     </div>
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-phone-alt services-logos"></span>
-      <h4>IVR Solutions</h4>
-      <p>Once you choosed our platform to serve your busness, then you don't need to worry about incomming calls autmomatic answering machins, call dispatching even to mobile numbers. It can replace your legacy PBX systems or works besid them if they support SIP connectivty </p>
+      <span class="glyphicon glyphicon glyphicon-home services-logos"></span>
+      <h4>End User Dialers</h4>
+      <p>If you don't have systems that need to intigrate our CloudVoice platform, the we can provide User friendly Disctop clients that integrate our platform through and easily be used to upload your prompts and numbers to launch your reminder or announcement campaigns </p>
     </div>
     </div>
     <br><br>
